@@ -50,7 +50,6 @@ export const loginStyle = {
         borderRadius: 30,
         backgroundColor: 'orange',
         padding: 12,
-        backgroundImage:"url(../../images/loginButtonBackground.png)"
     },
     loginButtonText: {
         textAlign: 'center',
