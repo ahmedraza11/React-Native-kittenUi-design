@@ -2,11 +2,8 @@ export const loginStyle = {
     iconBox: {
         alignItem: 'center',
         marginTop: 30,
-        alignItem: 'center',
         flexDirection: 'column',
         justifyContent: 'center'
-        // borderWidth:1,
-        // borderColor:'black'
     },
     container: {
         display: 'flex',
@@ -59,7 +56,7 @@ export const loginStyle = {
         textAlign: 'center',
         fontSize: 18,
         color: 'white'
-    },
+    },  
     socialIconContainer: {
         marginTop:15,
         flexDirection: 'row',
@@ -67,13 +64,6 @@ export const loginStyle = {
         justifyContent: 'space-around'
     },
     socialIcon: {
-        width: 50,
-        height: 50,
-        borderRadius: 30,
-        borderWidth:1,
-        borderColor:'#D3D3D3'
-    },
-    socialIconGmail: {
         width: 50,
         height: 50,
         borderRadius: 30,

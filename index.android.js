@@ -5,44 +5,20 @@
  */
 
 import React, { Component } from 'react';
+import Login from './src/components/login/login';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
   View,
-  TextInput
 } from 'react-native';
-import Login from './src/components/login/login';
-export default class projectNew extends Component {
-  constructor(props){
-    super(props);
 
-  }
+export default class projectNew extends Component {
   render() {
     return (
       <View>
+        <Login />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   backgroundColor: '#F5FCFF',
-  // },
-  // welcome: {
-  //   fontSize: 20,
-  //   textAlign: 'center',
-  //   margin: 10,
-  // },
-  // instructions: {
-  //   textAlign: 'center',
-  //   color: '#333333',
-  //   marginBottom: 5,
-  // },
-});
-
-AppRegistry.registerComponent('projectNew', () => Login);
+AppRegistry.registerComponent('projectNew', () => projectNew);
