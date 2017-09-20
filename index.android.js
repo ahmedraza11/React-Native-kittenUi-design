@@ -6,6 +6,9 @@
 
 import React, { Component } from 'react';
 import Login from './src/components/login/login';
+import Profile from './src/components/profile/profile';
+import { navigation } from './src/AppNavigation/navigation';
+
 import {
   AppRegistry,
   View,
@@ -15,10 +18,12 @@ export default class projectNew extends Component {
   render() {
     return (
       <View>
-        <Login />
+        {/* <Login /> */}
+        <Profile />
       </View>
+
     );
   }
 }
 
-AppRegistry.registerComponent('projectNew', () => projectNew);
+AppRegistry.registerComponent('projectNew', () => navigation);

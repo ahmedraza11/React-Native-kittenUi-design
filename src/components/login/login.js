@@ -10,9 +10,12 @@ import {
 } from 'react-native';
 import { loginStyle } from './loginStyle';
 class Login extends Component {
+    static navigationOptions = {
+        header: null
+    }
     render() {
+        const { navigate } = this.props.navigation;
         return (
-
             <View style={loginStyle.container}>
 
                 <View style={loginStyle.iconBox}>
@@ -26,7 +29,7 @@ class Login extends Component {
                     <View>
                         <TextInput placeholder="Username" underlineColorAndroid="transparent" style={loginStyle.inputStyle} />
                         <TextInput placeholder="Password" underlineColorAndroid="transparent" style={loginStyle.inputStyle} />
-                        <TouchableOpacity style={loginStyle.loginButton}>
+                        <TouchableOpacity style={loginStyle.loginButton} onPress={()=> navigate('profileScreen') }>
                             <Text style={loginStyle.loginButtonText}>LOGIN</Text>
                         </TouchableOpacity>
                     </View>
